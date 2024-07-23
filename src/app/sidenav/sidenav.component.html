@@ -1,0 +1,41 @@
+
+<app-header [userimg]="profileimage" [name]="name"></app-header>
+
+
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+  <div class="logo-container">
+    <button class="logo" (click)="toggleCollapse()">{{firstLetter}}</button>
+    <div class="logo-text" *ngIf="collapsed">{{name}}</div>
+    <button class="btn-close" *ngIf="collapsed" (click)="closeSidenav()">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </button>
+  </div>
+  <ul class="sidenav-nav">
+    <li class="sidenav-nav-item" *ngFor="let data of navData">
+      <a  class="sidenav-nav-link" [routerLink]="[data.routelink]">
+        <i class="sidenav-nav-link-icon"[class]="data.icon"></i>
+        <span class="sidenav-nav-link-text" *ngIf="collapsed">{{data.label}}</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="card">
+  <img [src]="profileimage">
+  <h3>Name: {{name}}</h3>
+  <h2>Email: {{Email}}</h2>
+  
+  
+   <a (click)="signOut()">Logout</a>
+</div> -->
+
+

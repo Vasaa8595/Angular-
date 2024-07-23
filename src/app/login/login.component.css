@@ -1,0 +1,76 @@
+@font-face {
+    font-family:'anto' ;
+    src: url(fonts/Anton_SC/AntonSC-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family:'libre' ;
+    src: url(fonts/Libre_Bodon/Libre_Bodoni/LibreBodoni-Italic-VariableFont_wght.ttf) format('truetype');
+   
+}
+@font-face {
+    font-family:'merienda' ;
+    src: url(fonts/Merienda/Merienda-VariableFont_wght.ttf) format('truetype');
+}
+@font-face {
+    font-family:'pacific' ;
+    src: url(fonts/Pacifico/Pacifico-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family:'anton' ;
+    src: url(fonts/Anton/Anton-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family:'roboto' ;
+    src: url(fonts/Roboto/Roboto-Light.ttf) format('truetype');
+}
+@font-face {
+    font-family:'robot' ;
+    src: url(fonts/Roboto/Roboto-MediumItalic.ttf) format('truetype');
+}
+.container{
+    top: 50%;
+    left: 50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.c1{
+    padding: 40px 50px 30px 40px;
+    background: rgb(239, 237, 237);
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.c1 h1{
+    font-family:'robot';
+    font-size: xx-large;
+    font-weight: 50px;
+    font-style:bold;
+    padding: 10px;
+    
+}
+
+.c1 h3{
+    font-family:'pacific';
+    font-size: 20px;
+    font-weight: 3px;
+    font-style:italic;
+    padding: 20px;
+    
+}
+
+#google-btn{
+    margin-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    
+    
+}
+
